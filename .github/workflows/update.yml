@@ -20,6 +20,8 @@ jobs:
         with:
           persist-credentials: true
       - name: Update pinned releases
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: python3 scripts/update-releases.py
       - name: Commit updates
         run: |

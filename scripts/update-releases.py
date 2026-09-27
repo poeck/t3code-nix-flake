@@ -3,6 +3,7 @@
 
 import base64
 import json
+import os
 import re
 import urllib.request
 from pathlib import Path
@@ -17,13 +18,16 @@ ASSETS = {"x86_64-linux": "x86_64", "aarch64-linux": "arm64"}
 
 
 def get_json(url):
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "User-Agent": "t3code-nix-flake-updater",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    if token := os.environ.get("GITHUB_TOKEN"):
+        headers["Authorization"] = f"Bearer {token}"
     request = urllib.request.Request(
         url,
-        headers={
-            "Accept": "application/vnd.github+json",
-            "User-Agent": "t3code-nix-flake-updater",
-            "X-GitHub-Api-Version": "2022-11-28",
-        },
+        headers=headers,
     )
     with urllib.request.urlopen(request, timeout=30) as response:
         return json.load(response)

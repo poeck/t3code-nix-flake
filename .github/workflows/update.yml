@@ -1,0 +1,34 @@
+name: Update T3 Code releases
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-t3code-releases
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Update pinned releases
+        run: python3 scripts/update-releases.py
+      - name: Commit updates
+        run: |
+          if git diff --quiet -- releases.json; then
+            echo "No new releases"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add releases.json
+          git commit -m "Update T3 Code releases"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

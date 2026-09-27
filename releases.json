@@ -1,0 +1,18 @@
+{
+  "stable": {
+    "tag": "v0.0.42",
+    "version": "0.0.42",
+    "hashes": {
+      "x86_64-linux": "sha256-jcH8zavC7TpZo5RMx3LvEZMbk1FAHAlj7TBdX5bjzfQ=",
+      "aarch64-linux": "sha256-wlbYctNY6fLJEyiwFUxjEfousWOG7294j82hLXPPKDY="
+    }
+  },
+  "nightly": {
+    "tag": "v0.0.43-nightly.20260927.2344",
+    "version": "0.0.43-nightly.20260927.2344",
+    "hashes": {
+      "x86_64-linux": "sha256-WrYIdbxCNd939QH8uBFc888rkNYlHgOBphpt6qeKCFE=",
+      "aarch64-linux": "sha256-yRI4pAXFr2TjT5jBH+Y21IrbXuaMHAFT256WoRTPhIE="
+    }
+  }
+}

@@ -1,18 +1,18 @@
 {
   "stable": {
-    "tag": "v0.0.44",
-    "version": "0.0.44",
+    "tag": "v0.0.45",
+    "version": "0.0.45",
     "hashes": {
-      "x86_64-linux": "sha256-urbPKfEwFa9+lm6VPo7Vqa17bmPLhkz0Hj4IFeqFchk=",
-      "aarch64-linux": "sha256-Z1nYYe2fOLH/25oa+ZamBj/u+yC9gedMGmZmWu+ttKs="
+      "x86_64-linux": "sha256-q3sKhtHqZXzMFitgt3LGH3C8fIueJZtGk51Tuzj6oCo=",
+      "aarch64-linux": "sha256-AxE1ZvUrB6TVAyOcN4VAF1aR2aBX7UHg55SJfWvgVNU="
     }
   },
   "nightly": {
-    "tag": "v0.0.45-nightly.20261002.2584",
-    "version": "0.0.45-nightly.20261002.2584",
+    "tag": "v0.0.45-nightly.20261002.2595",
+    "version": "0.0.45-nightly.20261002.2595",
     "hashes": {
-      "x86_64-linux": "sha256-fTu2xKFk3Evy6KbkaGUGjkCUNAaGFK4BP1R85xnDZXw=",
-      "aarch64-linux": "sha256-3abkqqpOWQoJkinjHcoKnWpbxM4PdnAx9/J5D2FKceo="
+      "x86_64-linux": "sha256-dkSVw5gwZs6RnsPPSTYVTcSMdROen1S66A7dIwrMiCw=",
+      "aarch64-linux": "sha256-qNhmhGshgFYLK+rGffvXHNyhGSixrtL0rHRY47e0+GU="
     }
   }
 }

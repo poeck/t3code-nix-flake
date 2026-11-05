@@ -8,11 +8,11 @@
     }
   },
   "nightly": {
-    "tag": "v0.1.8-nightly.20261105.4205",
-    "version": "0.1.8-nightly.20261105.4205",
+    "tag": "v0.1.8-nightly.20261105.4218",
+    "version": "0.1.8-nightly.20261105.4218",
     "hashes": {
-      "x86_64-linux": "sha256-+8XrsLrkltOw5+EwBDVEAZ1GumciFPIz9A/GXC+6JH0=",
-      "aarch64-linux": "sha256-c3X+VIXLA7sFHdEHBaT0DX8S8uMwWvaBrFmGAD+gjxo="
+      "x86_64-linux": "sha256-aR9Bv6AR8Zf7eTXnn4n7NNVZW5bT8nSWLw3+sEX61/0=",
+      "aarch64-linux": "sha256-ZPn+oFzuKZKvhodw+0OARxb27zfybirNLYSSNBhfalU="
     }
   }
 }
